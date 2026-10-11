@@ -1,5 +1,5 @@
 Daily Puppet Automation Commands
-================================
+===============================
 
 Command 1: Validate Puppet Syntax
 puppet parser validate /etc/puppetlabs/code/environments/production/manifests/site.pp
@@ -16,4 +16,7 @@ puppet agent --test
 Command 5: Display Puppet Configuration
 puppet config print all
 
-Last Updated: 2026-10-10
+Command 6: Check Puppet Node Status
+puppet node status
+
+Last Updated: 2026-10-11
