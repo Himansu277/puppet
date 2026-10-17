@@ -19,4 +19,7 @@ puppet config print all
 Command 6: Check Puppet Node Status
 puppet node status
 
-Last Updated: 2026-10-11
+Command 7: Check AWS Identity
+aws sts get-caller-identity --profile default
+
+Last Updated: 2026-10-17
