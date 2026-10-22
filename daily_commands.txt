@@ -22,4 +22,7 @@ puppet node status
 Command 7: Check AWS Identity
 aws sts get-caller-identity --profile default
 
-Last Updated: 2026-10-17
+Command 8: Check SSH Service Resource
+puppet resource service sshd
+
+Last Updated: 2026-10-22
