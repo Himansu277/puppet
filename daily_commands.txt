@@ -25,4 +25,7 @@ aws sts get-caller-identity --profile default
 Command 8: Check SSH Service Resource
 puppet resource service sshd
 
-Last Updated: 2026-10-22
+Command 9: Run Puppet Agent in no-daemonize mode
+puppet agent --test --no-daemonize --color=false
+
+Last Updated: 2026-10-30
