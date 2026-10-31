@@ -28,4 +28,8 @@ puppet resource service sshd
 Command 9: Run Puppet Agent in no-daemonize mode
 puppet agent --test --no-daemonize --color=false
 
-Last Updated: 2026-10-30
+Command 10: Run Puppet Agent in debug mode
+puppet agent --test --debug
+
+Last Updated: 2026-10-31
+
