@@ -31,5 +31,8 @@ puppet agent --test --no-daemonize --color=false
 Command 10: Run Puppet Agent in debug mode
 puppet agent --test --debug
 
-Last Updated: 2026-10-31
+Command 11: List Installed Puppet Modules
+puppet module list
+
+Last Updated: 2026-11-02
 
