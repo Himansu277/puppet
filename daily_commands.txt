@@ -34,5 +34,7 @@ puppet agent --test --debug
 Command 11: List Installed Puppet Modules
 puppet module list
 
-Last Updated: 2026-11-02
+Command 12: List AWS Systems Manager managed instances
+aws ssm describe-instance-information --query 'InstanceInformationList[].{InstanceId:InstanceId,PingStatus:PingStatus,PlatformName:PlatformName}' --output table
 
+Last Updated: 2026-11-03
