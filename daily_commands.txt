@@ -37,4 +37,7 @@ puppet module list
 Command 12: List AWS Systems Manager managed instances
 aws ssm describe-instance-information --query 'InstanceInformationList[].{InstanceId:InstanceId,PingStatus:PingStatus,PlatformName:PlatformName}' --output table
 
-Last Updated: 2026-11-03
+Command 13: List Amazon S3 buckets
+aws s3 ls --profile default
+
+Last Updated: 2026-11-06
