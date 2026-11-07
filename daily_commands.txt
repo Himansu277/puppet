@@ -40,4 +40,7 @@ aws ssm describe-instance-information --query 'InstanceInformationList[].{Instan
 Command 13: List Amazon S3 buckets
 aws s3 ls --profile default
 
-Last Updated: 2026-11-06
+Command 14: Display the Puppet agent environment
+puppet config print environment
+
+Last Updated: 2026-11-07
