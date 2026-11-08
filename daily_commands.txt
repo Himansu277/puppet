@@ -43,4 +43,7 @@ aws s3 ls --profile default
 Command 14: Display the Puppet agent environment
 puppet config print environment
 
-Last Updated: 2026-11-07
+Command 15: Display the Puppet agent certname
+puppet config print certname
+
+Last Updated: 2026-11-08
