@@ -46,4 +46,7 @@ puppet config print environment
 Command 15: Display the Puppet agent certname
 puppet config print certname
 
-Last Updated: 2026-11-08
+Command 16: Display the Puppet server setting
+puppet config print server
+
+Last Updated: 2026-11-10
