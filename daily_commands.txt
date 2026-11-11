@@ -49,4 +49,7 @@ puppet config print certname
 Command 16: Display the Puppet server setting
 puppet config print server
 
-Last Updated: 2026-11-10
+Command 17: Preview Puppet changes without applying them
+puppet agent --test --noop --verbose
+
+Last Updated: 2026-11-11
