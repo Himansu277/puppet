@@ -1,58 +1,61 @@
-1| Daily Puppet Automation Commands
-2| ===============================
-3| 
-4| Command 1: Validate Puppet Syntax
-5| puppet parser validate /etc/puppetlabs/code/environments/production/manifests/site.pp
-6| 
-7| Command 2: Apply Puppet Configuration
-8| puppet apply /etc/puppetlabs/code/manifests/init.pp
-9| 
-10| Command 3: List Puppet Resources
-11| puppet resource service
-12| 
-13| Command 4: Check Puppet Agent Status
-14| puppet agent --test
-15| 
-16| Command 5: Display Puppet Configuration
-17| puppet config print all
-18| 
-19| Command 6: Check Puppet Node Status
-20| puppet node status
-21| 
-22| Command 7: Check AWS Identity
-23| aws sts get-caller-identity --profile default
-24| 
-25| Command 8: Check SSH Service Resource
-26| puppet resource service sshd
-27| 
-28| Command 9: Run Puppet Agent in no-daemonize mode
-29| puppet agent --test --no-daemonize --color=false
-30| 
-31| Command 10: Run Puppet Agent in debug mode
-32| puppet agent --test --debug
-33| 
-34| Command 11: List Installed Puppet Modules
-35| puppet module list
-36| 
-37| Command 12: List AWS Systems Manager managed instances
-38| aws ssm describe-instance-information --query 'InstanceInformationList[].{InstanceId:InstanceId,PingStatus:PingStatus,PlatformName:PlatformName}' --output table
-39| 
-40| Command 13: List Amazon S3 buckets
-41| aws s3 ls --profile default
-42| 
-43| Command 14: Display the Puppet agent environment
-44| puppet config print environment
-45| 
-46| Command 15: Display the Puppet agent certname
-47| puppet config print certname
-48| 
-49| Command 16: Display the Puppet server setting
-50| puppet config print server
-51| 
-52| Command 17: Preview Puppet changes without applying them
-53| puppet agent --test --noop --verbose
-54| 
-55| Command 18: Display the Puppet agent vardir
-56| puppet config print vardir
-57| 
-58| Last Updated: 2026-11-13
+Daily Puppet Automation Commands
+===============================
+
+Command 1: Validate Puppet Syntax
+puppet parser validate /etc/puppetlabs/code/environments/production/manifests/site.pp
+
+Command 2: Apply Puppet Configuration
+puppet apply /etc/puppetlabs/code/manifests/init.pp
+
+Command 3: List Puppet Resources
+puppet resource service
+
+Command 4: Check Puppet Agent Status
+puppet agent --test
+
+Command 5: Display Puppet Configuration
+puppet config print all
+
+Command 6: Check Puppet Node Status
+puppet node status
+
+Command 7: Check AWS Identity
+aws sts get-caller-identity --profile default
+
+Command 8: Check SSH Service Resource
+puppet resource service sshd
+
+Command 9: Run Puppet Agent in no-daemonize mode
+puppet agent --test --no-daemonize --color=false
+
+Command 10: Run Puppet Agent in debug mode
+puppet agent --test --debug
+
+Command 11: List Installed Puppet Modules
+puppet module list
+
+Command 12: List AWS Systems Manager managed instances
+aws ssm describe-instance-information --query 'InstanceInformationList[].{InstanceId:InstanceId,PingStatus:PingStatus,PlatformName:PlatformName}' --output table
+
+Command 13: List Amazon S3 buckets
+aws s3 ls --profile default
+
+Command 14: Display the Puppet agent environment
+puppet config print environment
+
+Command 15: Display the Puppet agent certname
+puppet config print certname
+
+Command 16: Display the Puppet server setting
+puppet config print server
+
+Command 17: Preview Puppet changes without applying them
+puppet agent --test --noop --verbose
+
+Command 18: Display the Puppet agent vardir
+puppet config print vardir
+
+Command 19: Run a Puppet no-op preview on an AWS EC2 instance through Systems Manager
+aws ssm send-command --instance-ids <instance-id> --document-name "AWS-RunShellScript" --parameters '{"commands":["sudo /opt/puppetlabs/bin/puppet agent --test --noop --verbose"]}' --query 'Command.CommandId' --output text
+
+Last Updated: 2026-11-14
