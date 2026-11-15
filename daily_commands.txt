@@ -58,4 +58,7 @@ puppet config print vardir
 Command 19: Run a Puppet no-op preview on an AWS EC2 instance through Systems Manager
 aws ssm send-command --instance-ids <instance-id> --document-name "AWS-RunShellScript" --parameters '{"commands":["sudo /opt/puppetlabs/bin/puppet agent --test --noop --verbose"]}' --query 'Command.CommandId' --output text
 
-Last Updated: 2026-11-14
+Command 20: Show the Puppet agent's configured run interval
+puppet config print runinterval
+
+Last Updated: 2026-11-15
