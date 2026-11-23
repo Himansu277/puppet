@@ -15,4 +15,18 @@ Verify the installation:
 /opt/puppetlabs/bin/puppet --version
 ```
 
-See [PUPPET_AWS_INSTALLATION.md](PUPPET_AWS_INSTALLATION.md) for additional operating systems and AWS-specific setup instructions.
+## Install Terraform with Puppet
+
+Run the repository's Terraform installation manifest:
+
+```bash
+sudo puppet apply terraform.pp
+```
+
+Verify the installation:
+
+```bash
+terraform version
+```
+
+See [PUPPET_COMMAND_22.md](PUPPET_COMMAND_22.md) for the Terraform command details and [PUPPET_AWS_INSTALLATION.md](PUPPET_AWS_INSTALLATION.md) for additional operating systems and AWS-specific setup instructions.
