@@ -29,4 +29,4 @@ Verify the installation:
 terraform version
 ```
 
-See [PUPPET_COMMAND_22.md](PUPPET_COMMAND_22.md) for the Terraform command details and [PUPPET_AWS_INSTALLATION.md](PUPPET_AWS_INSTALLATION.md) for additional operating systems and AWS-specific setup instructions.
+See [PUPPET_COMMAND_22.md](PUPPET_COMMAND_22.md) for the Terraform command details, [PUPPET_COMMAND_26.md](PUPPET_COMMAND_26.md) for installing the AWS CLI on Ubuntu/Debian, and [PUPPET_AWS_INSTALLATION.md](PUPPET_AWS_INSTALLATION.md) for additional operating systems and AWS-specific setup.

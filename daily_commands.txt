@@ -67,4 +67,7 @@ sudo puppet apply nagios.pp
 Command 22: Install Terraform with Puppet
 sudo puppet apply terraform.pp
 
-Last Updated: 2026-11-23
+Command 23: Install AWS CLI on Ubuntu/Debian
+sudo apt-get update && sudo apt-get install -y awscli
+
+Last Updated: 2026-11-25
