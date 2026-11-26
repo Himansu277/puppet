@@ -56,7 +56,7 @@ Command 18: Display the Puppet agent vardir
 puppet config print vardir
 
 Command 19: Run a Puppet no-op preview on an AWS EC2 instance through Systems Manager
-aws ssm send-command --instance-ids <instance-id> --document-name "AWS-RunShellScript" --parameters '{"commands":["sudo /opt/puppetlabs/bin/puppet agent --test --noop --verbose"]}' --query 'Command.CommandId' --output text
+aws ssm send-command --instance-ids <instance-id> --document-name "AWS-RunShellScript" --parameters '{"commands":["sudo /opt/puppetlabs/bin/puppet agent --test --noop --verbose"]}' --query 'Command.CommandId'
 
 Command 20: Show the Puppet agent's configured run interval
 puppet config print runinterval
@@ -70,4 +70,7 @@ sudo puppet apply terraform.pp
 Command 23: Install AWS CLI on Ubuntu/Debian
 sudo apt-get update && sudo apt-get install -y awscli
 
-Last Updated: 2026-11-25
+Command 24: Install Ansible on Ubuntu/Debian
+sudo apt-get update && sudo apt-get install -y ansible
+
+Last Updated: 2026-11-26
